@@ -14,4 +14,73 @@
   html {
     scroll-behavior: smooth;
   }
+  /* Hero CSS starts*/
+  .container{
+    border: 1px solid black;
+    width: 1440px;
+    height: 520px;
+    font-size: large;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
   
+  /* Hero CSS ends */
+
+  /* Hug container starts */
+  .hug{
+    display: flex;
+    border: 1px solid black;
+    width: 1440px;
+    height: 700px;
+  }
+  .image-hug{
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    margin: 50px;
+  }
+ .hug p{
+    text-align: center;
+  }
+  /* Hug container ends */
+
+  /* Logo container */
+  .logo{
+    border: 1px solid black;
+    width: 1440px;
+    height: 300px;
+  }
+  /* Logo container ends */
+
+  /* Second Hug container starts */
+  .hug2{
+    display: flex;
+    border: 1px solid black;
+    width: 1440px;
+    height: 700px;
+  }
+  /* Second Hug container ends */
+
+  /* Partners container starts */
+  .partners{
+    display: flex;
+    border: 1px solid black;
+    width: 1440px;
+    height: 700px;
+  }
+  .partner-container{
+    border: 1px solid black;
+    width: 450px;
+    height: 600px;
+    margin: 20px;
+  }
+  /* Partners container ends */
+
+  /* Contact container starts */
+  .contact-container{
+    border: 1px solid black;
+    width: 1440px;
+    height: 700px;
+  }
+  /* Contact container ends */
