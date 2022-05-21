@@ -1,86 +1,357 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+/* ========================================================== */
+/* Navigation Bar Here */
+/* ========================================================== */
+header {
+  width: 100%;
+  padding: 0.95rem 1.4rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  border: #d8d8d8 solid 1px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 24px 0px;
+}
+.logo {
+  width: 25%;
+}
+.header-nav {
+  width: 75%;
+}
+
+.logo img {
+  width: 120px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-item a {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+#nav-contact-button {
+  background: #1b1b1b;
+  padding: 0.8rem 1.2rem;
+  border: #1b1b1b solid 2px;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s linear;
+}
+
+#nav-contact-button:hover {
+  background-color: #ffffff;
+  color: #1b1b1b;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+#nav-contact-button a:hover {
+  text-decoration: none;
+}
+
+/* ========================================================== */
+/* Navigation Bar Ends Here*/
+
+/* Hero CSS starts*/
+.container {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 100%;
+  height: 520px;
+  font-size: large;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.container {
+  background: url("/images/partners-hero-image.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero {
+  display: flex;
+}
+.hero img {
+  width: 1440px;
+  height: auto;
+}
+.container p {
+  font-size: 3.4rem;
+}
+
+.button-dark {
+  display: inline-block;
+  width: 200px;
+  padding: 0.6rem 0 0.8rem 0;
+  border: #1b1b1b solid 2px;
+  background: #1b1b1b;
+  color: #ffffff;
+
+  text-align: center;
+  border-radius: 5px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s linear;
+}
+
+.button-dark:hover {
+  border: #1b1b1b solid 2px;
+  background: #ffffff;
+  color: #1b1b1b;
+
+  transition: background 0.2s linear;
+}
+
+/* Hero CSS ends */
+
+/* Hug container starts */
+.hug {
+  display: flex;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 1440px;
+  height: 700px;
+}
+.image-hug {
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  margin: 50px;
+  background-image: url(/images/hunger-hug-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image-hug2 {
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  margin: 50px;
+  background-image: url(/images/hunger-hug2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hug p {
+  text-align: center;
+}
+/* Hug container ends */
+
+/* Logo container */
+.logo-partners {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 1440px;
+  height: 300px;
+}
+/* Logo container ends */
+
+/* Second Hug container starts */
+.hug2 {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 1440px;
+  height: 700px;
+}
+/* Second Hug container ends */
+
+/* Partners container starts */
+.partners {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 1440px;
+  gap: 1rem;
   
-  li,
-  a {
-    text-decoration: none;
-    list-style-type: none;
-    color: inherit;
-  }
+}
+.partner-container {
+  border: 1px solid black;
+  width: 33%;
+  height: 600px;
+  display: grid;
+  place-content: center;
+}
+/* Partners container ends */
+
+/* Contact container starts */
+.contact-container {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 1440px;
+  height: 700px;
+}
+.contact-container {
+  background-image: url(/images/Join-us-img.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contact-container p {
+  font-size: 3.4rem;
+  margin-top: 250px;
+  text-align: center;
+}
+.contact-container a {
+  margin: 40px 550px;
+}
+/* Contact container ends */
+
+/* Partner container starts */
+
+.partner-profile {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 50px;
+
+}
+
+.partner-profile p {
+  width: 50%;
   
-  html {
-    scroll-behavior: smooth;
-  }
-  /* Hero CSS starts*/
-  .container{
-    border: 1px solid black;
-    width: 1440px;
-    height: 520px;
-    font-size: large;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-  
-  /* Hero CSS ends */
+}
 
-  /* Hug container starts */
-  .hug{
-    display: flex;
-    border: 1px solid black;
-    width: 1440px;
-    height: 700px;
-  }
-  .image-hug{
-    border: 1px solid black;
-    width: 600px;
-    height: 600px;
-    margin: 50px;
-  }
- .hug p{
-    text-align: center;
-  }
-  /* Hug container ends */
+.profile-pic2 {
+  border: 1px solid black;
+  margin: 0 auto;
 
-  /* Logo container */
-  .logo{
-    border: 1px solid black;
-    width: 1440px;
-    height: 300px;
-  }
-  /* Logo container ends */
+  bottom: 0;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+.profile-pic2 {
+  background-image: url(/images/ceo2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.profile-pic3 {
+  border: 1px solid black;
+  margin: 0 auto;
+  bottom: 0;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+.profile-pic3 {
+  background-image: url(/images/ceo3.webp);
+  background-size: cover;
+  background-position: center;
+}
+/* Partner container ends */
 
-  /* Second Hug container starts */
-  .hug2{
-    display: flex;
-    border: 1px solid black;
-    width: 1440px;
-    height: 700px;
-  }
-  /* Second Hug container ends */
+/* Footer starts */
 
-  /* Partners container starts */
-  .partners{
-    display: flex;
-    border: 1px solid black;
-    width: 1440px;
-    height: 700px;
-  }
-  .partner-container{
-    border: 1px solid black;
-    width: 450px;
-    height: 600px;
-    margin: 20px;
-  }
-  /* Partners container ends */
+footer {
+  border: #1a1a1a solid 1px;
+  padding: 3rem 2rem;
+}
+.footer-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 3rem;
+}
 
-  /* Contact container starts */
-  .contact-container{
-    border: 1px solid black;
-    width: 1440px;
-    height: 700px;
+.footer-nav-container img {
+  width: 120px;
+  height: 50px;
+}
+
+.footer-nav-container {
+  width: 25%;
+  flex: 0 0 25%;
+}
+
+.footer-nav-heading {
+  margin: 1rem 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer-nav-container p {
+  width: 75%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-list li {
+  margin-bottom: 0.6rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.fa-brands,
+.fa-solid {
+  margin-right: 0.3rem;
+}
+
+.footer-nav-container--bottom h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1050px) {
+  .footer-nav {
+    flex-flow: column nowrap;
   }
-  /* Contact container ends */
+
+  .footer-nav-container {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+/* Footer Ends */
