@@ -21,8 +21,7 @@ body {
     'figure figure'
     'section3 section3'
     'footer footer';
-
-
+    
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
 }
@@ -215,7 +214,7 @@ figure {
 }
 
 .miniFigure-paragraph p {
-  padding-bottom: 4rem;
+  padding-bottom: 4rem; 
 }
 
 .miniFigure-paragraph h2 {
@@ -225,7 +224,7 @@ figure {
 }
 
 .miniFigure-p3 {
-  margin-top: 3rem;
+  margin-top: 3rem; 
 }
 
 footer {
@@ -314,12 +313,12 @@ footer {
     margin-top: 1rem;
   }
 
-  .miniFigure-paragraph p {
+  .miniFigure-paragraph p{
     padding-bottom: 1rem;
   }
 
   .miniFigure-p3 {
-    margin-top: 0rem;
+    margin-top: 0rem; 
   }
 
   .footer-nav {
@@ -334,22 +333,22 @@ footer {
 
 @media (max-width: 600px) {
 
-  header {
-    flex-direction: column;
-  }
+header {
+  flex-direction: column;
+}
 
-  .logo {
-    width: 30%;
-  }
+.logo {
+  width: 30%;
+}
 
-  .nav-list {
-    display: block;
-    text-align: center;
-  }
+.nav-list {
+  display: block;
+  text-align: center;
+}
 
-  .nav-item a {
-    font-size: 1.3rem;
-    padding-bottom: 2 rem;
-    text-transform: uppercase;
-  }
+.nav-item a {
+  font-size: 1.3rem;
+  padding-bottom: 2 rem;
+  text-transform: uppercase;
+}
 }
