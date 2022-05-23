@@ -136,6 +136,8 @@ header {
   margin-bottom: 1rem;
 }
 
+/* This is the section one container here -------------------------- */
+
 .sectionOne-container {
   grid-area: section1;
   display: flex;
@@ -281,7 +283,45 @@ footer {
   font-weight: 600;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
+
+  .sectionMap-container {
+    min-width: 25rem;
+  }
+
+  .sectionOne-container {
+    flex-direction: column;
+  }
+
+  .sectionTwo-container {
+    flex-direction: column;
+  }
+
+  .sectionThree-container {
+    flex-direction: column;
+  }
+
+  .miniFigure-image {
+    width: 100%;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+  .miniFigure-paragraph {
+    position: relative;
+    width: 100%;
+    padding: 0rem 4rem;
+    margin-top: 1rem;
+  }
+
+  .miniFigure-paragraph p{
+    padding-bottom: 1rem;
+  }
+
+  .miniFigure-p3 {
+    margin-top: 0rem; 
+  }
+
   .footer-nav {
     flex-flow: column nowrap;
   }
@@ -290,4 +330,22 @@ footer {
     width: 100%;
     flex: 0 0 100%;
   }
+}
+
+@media (max-width: 600px) {
+
+header {
+  flex-direction: column;
+}
+.nav-list {
+  display: block;
+  text-align: center;
+  align-items: center;
+  gap: 0rem;
+}
+
+.nav-item a {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
 }
