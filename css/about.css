@@ -1,17 +1,293 @@
+/* The below is the default sizing for everything*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Step one: Set the display to grid and state your grid areas */
+body {
+  background-color: #F7F5ED;
+  font-size: 16px;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'sectionMap sectionMap'
+    'section1 section1'
+    'section2 section2'
+    'figure figure'
+    'section3 section3'
+    'footer footer';
+
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
+
+/* Step two: Assign grid area names to their respsective elements.  */
+
+header {
+  grid-area: header;
+  background-color: white;
+  /* This is the start to all of the header css ------------------------------ */
+  width: 100%;
+  padding: 0.95rem 1.4rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  /* border: #d8d8d8 solid 1px; */
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 24px 0px;
+}
+
+.logo {
+  width: 25%;
+}
+
+.header-nav {
+  width: 75%;
+}
+
+.logo img {
+  width: 120px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-item a {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+#nav-contact-button {
+  background: #fa9500;
+  padding: 0.8rem 1.2rem;
+  border: #fa9500 solid 2px;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s linear;
+}
+
+#nav-contact-button:hover {
+  background-color: #ffffff;
+  color: #1b1b1b;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+#nav-contact-button a:hover {
+  text-decoration: none;
+}
+
+/* This is the end to all the header related css ----------------------- */
+
+#map {
+  height: 400px;
+  width: 96.5%;
+  padding: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.sectionMap-container {
+  grid-area: sectionMap;
+  text-align: center;
+  padding: 2rem;
+}
+
+.sectionMap-container h2 {
+  color: #7c6a0a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sectionOne-container {
+  grid-area: section1;
+  display: flex;
+}
+
+.sectionTwo-container {
+  grid-area: section2;
+  display: flex;
+}
+
+figure {
+  position: relative;
+  grid-area: figure;
+  background-image: url(/images/market-about-image.webp);
+  height: 16rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.figure-paragraph {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+}
+
+.button-dark {
+  z-index: 20;
+  width: 200px;
+  padding: 0.6rem 0 0.8rem 0;
+  border: #fa9500 solid 2px;
+  background: #fa9500;
+  color: #ffffff;
+
+  text-align: center;
+  border-radius: 5px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s linear;
+
+}
+
+.button-dark:hover {
+  border: #fa9500 solid 2px;
+  background: #ffffff;
+  color: #1b1b1b;
+  transition: background 0.2s linear;
+}
+
+.sectionThree-container {
+  grid-area: section3;
+  display: flex;
+}
+
+.miniFigure-image {
+  position: relative;
+  width: 50%;
+  padding: 1rem;
+}
+
+.miniFigure-image img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 90%;
+}
+
+.miniFigure-paragraph {
+  position: relative;
+  width: 50%;
+  padding: 2rem 4rem;
+}
+
+.miniFigure-paragraph p {
+  padding-bottom: 4rem; 
+}
+
+.miniFigure-paragraph h2 {
+  color: #7c6a0a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.miniFigure-p3 {
+  margin-top: 3rem; 
+}
+
+footer {
+  background-color: white;
+  grid-area: footer;
+  padding: 3rem 2rem;
+}
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 3rem;
+}
+
+.footer-nav-container img {
+  width: 120px;
+  height: 50px;
+}
+
+.footer-nav-container {
+  width: 25%;
+  flex: 0 0 25%;
+}
+
+.footer-nav-heading {
+  margin: 1rem 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer-nav-container p {
+  width: 75%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-list li {
+  margin-bottom: 0.6rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.fa-brands,
+.fa-solid {
+  margin-right: 0.3rem;
+}
+
+.footer-nav-container--bottom h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1050px) {
+  .footer-nav {
+    flex-flow: column nowrap;
   }
-  
-  li,
-  a {
-    text-decoration: none;
-    list-style-type: none;
-    color: inherit;
+
+  .footer-nav-container {
+    width: 100%;
+    flex: 0 0 100%;
   }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
+}
