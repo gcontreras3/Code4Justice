@@ -101,7 +101,7 @@ header {
   justify-content: center;
 }
 .container {
-  background: url("/images/partners-hero-image.webp");
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("/images/people-volunteering-food-bank.jpg") ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -178,14 +178,14 @@ header {
   background-position: center;
 }
 .hug-p {
-  text-align: center;
+  text-align: left;
   margin-top: 250px;
   font-size: 24px;
   width: 50%;
 }
 
 .hug2 p {
-  text-align: center;
+  text-align: left;
   margin-top: 250px;
   font-size: 24px;
   width: 300px;
