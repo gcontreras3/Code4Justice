@@ -22,23 +22,308 @@
     <!-- NAVIGATION START  -->
     <!-- ================================================================ -->
     <header>
-    
+
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/quickBytes-logo.webp" alt="Logo of our non profit organization">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/pages/about.html">
+                        About us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+
+                    <a href="/pages/partners.html">
+                        Partners
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/pages/events.html">
+                        Events
+                    </a>
+                </li>
+
+                <li class="nav-item" id="nav-contact-button">
+                    <a href="/pages/contact.html">
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- MAIN START  -->
     <!-- ================================================================ -->
     <main>
- 
 
-        
+        <!-- EMAIL MODAL ================================================================ -->
+        <section class="email-modal">
+            <div class="email-modal__container">
+                <!-- ===================== Modal Content ========================== -->
+                <div class="email-modal__content">
+                    <div class="email-modal__close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    <!-- ========================== Modal Logo ========================== -->
+                    <div class="email-logo">
+                        <img class="logo__img" src="/images/quickBytes-logo.webp">
+                    </div>
+
+                    <!-- ========================== Modal Title ========================== -->
+                    <h2 class="email-modal__title">
+                        Email Hook
+                    </h2>
+
+                    <!-- ========================== Modal Message ========================== -->
+                    <p class="email-modal__message">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eius molestiae
+                    </p>
+
+                    <!-- ========================== Modal ERROR Message ========================== -->
+                    <div class="email-modal__error-message">
+                        <i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address
+                    </div>
+
+                    <!-- ========================== Modal Form Group ========================== -->
+                    <div class="email-modal__form-group">
+                        <input type="text" class="email-modal__input email-modal__input-error"
+                            placeholder="Insert your email here">
+                        <button class="button-dark email-modal__button">Sign up</button>
+                    </div>
+
+                    <!-- ========================== Modal Decline Offer Group ========================== -->
+                    <div class="email-modal__decline-offer">Not interested</div>
+
+                    <!-- ========================== Modal Email Sent Message ========================== -->
+                    <div class="email-thank ">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="email-thank__title">
+                            Thank You
+                        </div>
+                        <p class="email-thank__message">
+                            check your email we sent you some instructions... by the way welcome to the community!
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- ========================== Modal Side Img ========================== -->
+                <div class="email-modal__side-img">
+
+                    <img src="/images/homepage-email-modal-img.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO SECTION ================================================================ -->
+        <section class="hero">
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <h1>
+                        Building &amp; supporting by feeding our community.
+                    </h1>
+                    <p>
+                        Food insecurity in local low income areas, especially those affected during the pandemic as
+                        inflation prices continue to rise.
+                    </p>
+                    <a href="/pages/partners.html" class="button-dark about__button">
+                        Join us
+                    </a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="/images/homepage-hero-img.webp" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION ================================================================ -->
+        <section class="about">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="/images/homepage-about-image.webp" alt="image">
+                </div>
+
+                <div class="about-content">
+                    <h2 class="about__title">
+                        Working on creating future in with no food insecurities
+                    </h2>
+                    <p class="about__paragraph">
+                        Over 38 million Americans are facing food insecurities. These might include not being able afford or access food. 
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION ================================================================ -->
+        <section class="about">
+            <div class="about-wrapper about-wrapper-reverse">
+                <div class="about-image about-image-reverse">
+                    <img src="/images/homepage-about-image-2.webp" alt="image">
+                </div>
+                <div class="about-content">
+                    <h2 class="about__title">
+                        Improving health of our community, One fridge at a time.
+                    </h2>
+                    <p class="about__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum maiores fugiat, rem,
+                        voluptatem accusamus, deserunt quia temporibus ipsam repudiandae omnis magnam tempora commodi
+                        beatae nisi provident. Perferendis, recusandae eaque.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION ================================================================ -->
+        <section class="features">
+            <div class="features-wrapper">
+                <div class="features-content">
+                    <h2>Improving health of our community, One fridge at a time.</h2>
+                    <p>
+                        Quickbytes is a non-profit organization helping solve Hunger insecurity in the Richmond Area.
+                        You can visit our about us page to view available fridge locations.</p>
+                    <a href="/pages/about.html" class="button-dark about__button">
+                        Go to map
+                    </a>
+                </div>
+                <div class="features-image">
+                    <img src="/images/homepage-cta-bg.jpg" alt="image placeholder">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA SECTION ================================================================ -->
+        <section class="cta-banner">
+            <div class="cta-banner-wrapper">
+                <div class="cta-banner-content">
+                    <h2>
+                        This is a call-to-action for you
+                        to click
+                    </h2>
+                    <a href="/pages/partners.html" class="button-dark cta__button">
+                        Button
+                    </a>
+                </div>
+                <div class="cta-banner-image">
+                    <img src="/images/homepage-cta-image.png"
+                        alt="image of volunteers getting ready to help our community">
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- FOOTER START  -->
     <!-- ================================================================ -->
     <footer>
+        <nav class="footer-nav">
+            <div class="footer-nav-container">
+                <img src="/images/quickBytes-logo.webp" alt="Logo of QuickBytes, our non-profit organization">
+                <h2 class="footer-nav-heading">
+                    QuickBytes
+                </h2>
+                <p>
+                    Food insecurity in local low income areas, especially those affected during the pandemic as
+                    inflation prices continue to rise.
+                </p>
+            </div>
+            <div class="footer-nav-container">
+                <h2 class="footer-nav-heading">
+                    Website Pages
+                </h2>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Partners
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <h2 class="footer-nav-heading">
+                    Socials
+                </h2>
+                <ul class="footer-list">
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#"> Instagram </a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="#">Linkedin </a>
+                    </li>
 
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <h2 class="footer-nav-heading">
+                    Contact Info
+                </h2>
+                <ul class="footer-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">Richmond, Virginia</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="#"> quickbytes@nonproft.org </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="#"> 707-987-1111</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="footer-nav-container--bottom">
+            <h2>
+                Copyright &copy; 2022
+            </h2>
+        </div>
     </footer>
 
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
